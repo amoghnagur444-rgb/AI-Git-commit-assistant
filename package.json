@@ -1,0 +1,26 @@
+{
+  "name": "ai-commit-assistant-AmoghNagur",
+  "version": "1.0.0",
+  "description": "AI-powered CLI for generating conventional commits and release notes",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "ai-commit": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "git",
+    "cli",
+    "ai",
+    "gemini",
+    "commit"
+  ],
+  "author": "Amogh Nagur",
+  "license": "ISC",
+  "dependencies": {
+    "@google/genai": "^2.15.0",
+    "inquirer": "^14.0.2"
+  }
+}
