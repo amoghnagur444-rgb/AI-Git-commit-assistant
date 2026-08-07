@@ -1,10 +1,10 @@
 {
-  "name": "ai-commit-assistant-AmoghNagur",
-  "version": "1.0.0",
+  "name": "ai-commit-assistant",
+  "version": "1.0.1",
   "description": "AI-powered CLI for generating conventional commits and release notes",
   "main": "index.js",
   "type": "module",
-  "bin": {
+  "bin":{
     "ai-commit": "./index.js"
   },
   "scripts": {
@@ -20,7 +20,9 @@
   "author": "Amogh Nagur",
   "license": "ISC",
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.115.0",
     "@google/genai": "^2.15.0",
-    "inquirer": "^14.0.2"
+    "inquirer": "^14.0.2",
+    "openai": "^7.4.0"
   }
 }
