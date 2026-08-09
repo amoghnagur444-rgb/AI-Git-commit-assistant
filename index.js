@@ -153,6 +153,22 @@ async function main() {
 
     console.warn('\x1b[33m%s\x1b[0m', 'Security Reminder: Ensure no sensitive API keys or passwords are in your code before proceeding.');
 
+    // --- NEW SECURITY BLOCK ---
+    const { isSafeToProceed } = await inquirer.prompt([
+      {
+        type: 'confirm',
+        name: 'isSafeToProceed',
+        message: 'Are you sure your staged files/history are free of sensitive data?',
+        default: false 
+      }
+    ]);
+
+    if (!isSafeToProceed) {
+      console.log('\x1b[31m%s\x1b[0m', 'Operation aborted. Please review your files and remove any sensitive data.');
+      process.exitCode = 0;
+      return;
+    }
+
     const isReleaseMode = process.argv.includes('--release');
 
     if (isReleaseMode) {
