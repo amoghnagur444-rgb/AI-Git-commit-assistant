@@ -64,3 +64,17 @@
 ### Maintenance
 - Added project documentation in `README.md`.
 - Configured repository `.gitignore` rules.
+
+## v1.0.3 - 2026-08-09
+
+### Features
+- **Security Check Prompt:** Added an interactive safety prompt requiring confirmation that staged files and history do not contain sensitive data before proceeding, gracefully aborting if sensitive data is indicated.
+- **Interactive Commit Confirmation:** Introduced a terminal prompt to confirm changes and automatically execute Git commits upon user approval.
+
+### Bug Fixes
+- *No bug fixes in this release.*
+
+### Maintenance
+- Updated project documentation in `README.md`.
+- Configured project `.gitignore` file.
+- Updated internal changelog generation and release workflows.
